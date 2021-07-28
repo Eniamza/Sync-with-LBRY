@@ -1,0 +1,12 @@
+{
+  "name": "Sync-with-LBRY",
+  "version": "0.1.0",
+  "description": "An app to Sync your content with LBRY without API Dependencies",
+  "main": "index.js",
+  "repository": "https://github.com/Eniamza/Sync-with-LBRY.git",
+  "author": "Eniamza <eniamza0@gmail.com>",
+  "license": "MIT",
+  "dependencies": {
+    "chalk": "^4.1.1"
+  }
+}
