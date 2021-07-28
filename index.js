@@ -1,18 +1,18 @@
 const path = require("path")
 const fs = require("fs")
 const chalk = require("chalk")
-let appDir = path.dirname(require.main.filename)
+const genConfig = require("./lib/misc/genConfig")
+
 
 console.log(chalk.yellowBright("Welcome to Sync with LBRY!"))
-console.log(chalk.yellowBright("Initiating Configuration Checks..."))
 
-let configDir = appDir + "/config.json"
+let execEverything = async function(){
 
-console.log();
 
-if(fs.existsSync(configDir)=== false){
+  await genConfig();
 
- console.log(chalk.red.bold("Config File not found!"))
- console.log(chalk.yellowBright("Redirecting to Configuration Generation Module..."))
 
 }
+
+
+execEverything()
