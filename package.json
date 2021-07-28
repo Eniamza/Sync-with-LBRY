@@ -7,6 +7,8 @@
   "author": "Eniamza <eniamza0@gmail.com>",
   "license": "MIT",
   "dependencies": {
-    "chalk": "^4.1.1"
+    "axios": "^0.21.1",
+    "chalk": "^4.1.1",
+    "readline-sync": "^1.4.10"
   }
 }
