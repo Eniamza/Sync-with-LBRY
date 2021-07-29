@@ -1,6 +1,7 @@
 {
 
     "youtubeChannelID":"",
-    "lbryChannelName":""
+    "lbryChannelName":"",
+    "doCleanup": false
 
 }
