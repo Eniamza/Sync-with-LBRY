@@ -19,7 +19,11 @@ let execEverything = async function(){
 
   if(chosenOp === 0){
     console.log(chalk.greenBright("Youtube Sync Mode Selected."))
-    await utxo.checkUTXO();
+    let utxoData = await utxo.checkUTXO();
+    if(utxoData === "error"){
+      return "error"
+    }
+    console.log("utxoDataOK")
   }
 
 
