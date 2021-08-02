@@ -3,6 +3,7 @@ const fs = require("fs")
 const chalk = require("chalk")
 const genConfig = require("./lib/misc/genConfig")
 const readlineSync = require("readline-sync")
+const precheck = require("./lib/misc/precheck")
 const utxo = require("./lib/lbry/utxo")
 
 
@@ -14,7 +15,12 @@ let chosenOp
 let execEverything = async function(){
 
 
-  await genConfig();
+ check = await precheck()
+ if(check){
+
+  return;
+
+ }
   chosenOp = readlineSync.keyInSelect(options, 'Select your Destiny!');
 
   if(chosenOp === 0){
