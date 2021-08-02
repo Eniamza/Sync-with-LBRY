@@ -18,7 +18,8 @@ let execEverything = async function(){
  check = await precheck()
  if(check){
 
-  return;
+  readlineSync.keyInPause(chalk.red.bold("Error encountered, Exiting..."))
+  return; 
 
  }
   chosenOp = readlineSync.keyInSelect(options, 'Select your Destiny!');
