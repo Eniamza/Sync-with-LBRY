@@ -9,6 +9,7 @@
   "dependencies": {
     "axios": "^0.21.1",
     "chalk": "^4.1.1",
-    "readline-sync": "^1.4.10"
+    "readline-sync": "^1.4.10",
+    "youtube-dl-exec": "^1.2.4"
   }
 }
