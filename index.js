@@ -5,7 +5,7 @@ const precheck = require("./lib/misc/precheck")
 
 console.log(chalk.yellowBright("Welcome to Sync with LBRY!"))
 
-let options = ["Sync from YouTube","Exit"]
+let options = ["Sync from YouTube"]
 let chosenOp 
 
 let execEverything = async function(){
