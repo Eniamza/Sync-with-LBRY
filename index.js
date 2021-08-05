@@ -1,3 +1,4 @@
+console.time("execTime")
 const chalk = require("chalk")
 const readlineSync = require("readline-sync")
 const ytmain = require("./lib/yt/ytmain")
@@ -22,9 +23,11 @@ let execEverything = async function(){
 
   if(chosenOp === 0){
 
-    ytmain();
+   await ytmain();
     
   }
+
+  console.timeEnd("execTime")
 
 
 }
