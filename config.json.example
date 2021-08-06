@@ -1,7 +1,8 @@
 {
 
-    "youtubeChannelID":"",
+    "youtubeChannelID":"", 
     "lbryChannelName":"",
-    "doCleanup": false
+    "doCleanup": true,
+    "longClaimNames": false
 
 }
