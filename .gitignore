@@ -4,3 +4,4 @@ node_modules/
 config.json
 log.txt
 db.json
+tempData.json
